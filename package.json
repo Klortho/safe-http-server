@@ -1,6 +1,6 @@
 {
   "name": "safe-http-server",
-  "version": "0.8.6-dev",
+  "version": "0.8.6",
   "description": "A simple zero-configuration command-line http server, that only allows connections from localhost",
   "main": "./lib/safe-http-server",
   "repository": {
