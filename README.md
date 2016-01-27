@@ -1,6 +1,8 @@
-# http-server: a command-line http server
+# safe-http-server: a command-line http server
 
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+`safe-http-server` is a simple, zero-configuration command-line http server, that only allows connections from localhost. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+
+This was forked from [indexzero/http-server](https://github.com/indexzero/http-server/commit/54e10777b4f01dad035065c6a1aa0aff8d9b732e), and the `-a` command-line argument was disabled.
 
 ![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)
 
@@ -8,13 +10,13 @@
 
 Installation via `npm`:
 
-     npm install http-server -g
+     npm install safe-http-server -g
 
-This will install `http-server` globally so that it may be run from the command line.
+This will install `safe-http-server` globally so that it may be run from the command line.
 
 ## Usage:
 
-     http-server [path] [options]
+     safe-http-server [path] [options]
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
@@ -22,19 +24,19 @@ This will install `http-server` globally so that it may be run from the command 
 
      mkdir myapp
      cd myapp/
-     jitsu install http-server
+     jitsu install safe-http-server
 
 *If you do not have `jitsu` installed you can install it via `npm install jitsu -g`*
 
 ## Usage
 
-### Starting http-server locally
+### Starting safe-http-server locally
 
-     node bin/http-server
+     node bin/safe-http-server
 
 *Now you can visit http://localhost:8080 to view your server*
 
-### Deploy http-server to nodejitsu
+### Deploy safe-http-server to nodejitsu
 
      jitsu deploy
 

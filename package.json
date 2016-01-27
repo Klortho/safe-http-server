@@ -1,19 +1,19 @@
 {
-  "name": "http-server",
-  "version": "0.8.5",
-  "description": "A simple zero-configuration command-line http server",
-  "main": "./lib/http-server",
+  "name": "safe-http-server",
+  "version": "0.8.6-dev",
+  "description": "A simple zero-configuration command-line http server, that only allows connections from localhost",
+  "main": "./lib/safe-http-server",
   "repository": {
     "type": "git",
-    "url": "git://github.com/indexzero/http-server.git"
+    "url": "git://github.com/klortho/safe-http-server.git"
   },
   "keywords": [
     "cli",
     "command"
   ],
   "scripts": {
-    "start": "node ./bin/http-server",
-    "pretest": "common bin/http-server lib/ test",
+    "start": "node ./bin/safe-http-server",
+    "pretest": "common bin/safe-http-server lib/ test",
     "test": "vows --spec --isolate"
   },
   "contributors": [
@@ -73,12 +73,12 @@
     "vows": "0.7.x"
   },
   "bugs": {
-    "url": "https://github.com/nodeapps/http-server/issues"
+    "url": "https://github.com/klortho/safe-http-server/issues"
   },
   "license": "MIT",
   "preferGlobal": "true",
   "bin": {
-    "http-server": "./bin/http-server",
-    "hs": "./bin/http-server"
+    "safe-http-server": "./bin/safe-http-server",
+    "hs": "./bin/safe-http-server"
   }
 }
