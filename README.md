@@ -75,3 +75,4 @@ This will install `safe-http-server` globally so that it may be run from the com
 `-r` or `--robots` Provide a /robots.txt (whose content defaults to 'User-agent: *\nDisallow: /')
 
 `-h` or `--help` Print this list and exit.
+
